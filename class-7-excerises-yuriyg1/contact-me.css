@@ -1,0 +1,23 @@
+input:invalid {
+    border: 1px solid  purple
+}
+
+input:valid {
+    border: 1px solid forestgreen
+}
+
+/* .valid {
+    border: 1px solid forestgreen
+}
+
+.invalid {
+    border: 1px solid orange
+} */
+
+.error {
+    color: red;
+}
+
+.hide {
+    display: none;
+} 
