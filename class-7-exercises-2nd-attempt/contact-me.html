@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contact Me</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="contact-me.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Contact Me</h1><hr>
+      <form id="connect-form" action="" novalidate>
+      <!-- <form id="connect-form" action="" > -->
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input
+            id="first-name"
+            class="form-control validate-input"
+            type="text"
+            name="first-name"
+          />
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input
+            id="last-name"
+            class="form-control validate-input"
+            type="text"
+            name="last-name"
+          />
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            id="email"
+            class="form-control validate-input"
+            type="email"
+            name="email"
+          />
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-group">
+          <label for="kind">What can we help with?</label>
+          <select required class="form-control" name="kind" id="contact-kind">
+            <option value="choose" selected="selected" disabled>
+              Choose one
+            </option>
+            <option value="business">Job opportunity</option>
+            <option value="technical">Talk code</option>
+          </select>
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-group business hide" >
+          <label for="">Job Title</label>
+          <input class="form-control validate-input" type="text" id="jobID" ><br>
+          <label for="webAd" id="web">Enter your URL:</label>
+          <input type="url" name="urlAd" id="webAd"
+                placeholder="https://example.com"
+                pattern="https://.*" size="30"
+                required>
+          <small class="error" aria-live="polite"></small>
+        </div>
+
+        <div class="form-group technical langr hide" >
+          <!-- <input type="text" > -->
+          <label for="lang">Coding Language</label>
+          <select required class="form-control" name="lang" id=codeL>
+            <option value="choose" selected="selected" disabled>
+              Choose one
+            </option>
+            <option value=“html”>HTML</option>
+            <option value=“css”>CSS</option>
+		        <option value=“js”>JavaScript</option>
+          </select>
+          <small class="error" aria-live="polite"></small>
+        </div>
+        <br>
+        <div class="form-group textBox">
+          <textarea style="width: 100%" rows="6"  id="comment" name="comment" form="usrform" placeholder="Enter Messege here (10 letters minimum)"></textarea>
+        </div>
+        <div class="form-group">
+          <input class="btn btn-primary" type="submit" id="submitIt" value="Sign up" />
+        </div>
+      </form>
+    </div>
+
+    <script src="contact-me.js"></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+/* input:invalid {
+    border: 1px solid  purple
+}
+
+input:valid {
+    border: 1px solid forestgreen
+} */
+
+.error {
+    color: red;
+}
+
+.hide {
+    display: none;
+} 
+
+.pass {
+    border: 2px solid green
+}
+
+.fail {
+    border: 2px solid red
+}
+
+body {
+    background-image: linear-gradient(white,grey);
+  }
+
+.comment{
+    border-radius: "3";
+    position: absolute;
+}
